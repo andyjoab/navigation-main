@@ -15,7 +15,7 @@ class EphimeralDrawerNavigation extends StatelessWidget {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                 color: Color.fromARGB(255, 85, 112, 233),
+                color: Color.fromARGB(255, 85, 112, 233),
               ),
               child: Text(
                 'InscribeTEC',
@@ -26,31 +26,58 @@ class EphimeralDrawerNavigation extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Home'),
+              leading: const Icon(Icons.person),
+              title: const Text(
+                'Información personal',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 124, 212, 124),
+                ),
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/one');
               },
             ),
             ListTile(
-              leading: const Icon(Icons.person),
-              title: const Text('Información personal'),
+              leading: const Icon(Icons.school),
+              title: const Text(
+                'Información académica',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 18, 103, 230),
+                ),
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/two');
               },
             ),
             ListTile(
-              leading: const Icon(Icons.school),
-              title: const Text('Información académica'),
+              leading: const Icon(Icons.abc_sharp),
+              title: const Text(
+                'Reinscripción',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 133, 130, 126),
+                ),
+              ),
               onTap: () {
                 Navigator.pushNamed(context, '/three');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.source_sharp),
+              title: const Text(
+                'Servicio social/Residencias',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 255, 12, 162),
+                ),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/four');
               },
             ),
           ],
         ),
       ),
       body: const Center(
-        child: Text('Página principal'),
+        child: Text('Información personal'),
       ),
     );
   }

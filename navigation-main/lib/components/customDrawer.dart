@@ -22,24 +22,31 @@ class CustomDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.home),
-            title: const Text('Home'),
-            onTap: () {
-              Navigator.pushReplacementNamed(context, '/one');
-            },
-          ),
-          ListTile(
             leading: const Icon(Icons.person),
             title: const Text('Información personal'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/two');
+              Navigator.pushReplacementNamed(context, '/one');
             },
           ),
           ListTile(
             leading: const Icon(Icons.school),
             title: const Text('Información académica'),
             onTap: () {
+              Navigator.pushReplacementNamed(context, '/two');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.abc_sharp),
+            title: const Text('Reinscripción'),
+            onTap: () {
               Navigator.pushReplacementNamed(context, '/three');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.source_sharp),
+            title: const Text('Servicio social/Residencias'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/four');
             },
           ),
         ],

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/pages.dart';
 
-
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
 
@@ -15,6 +14,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     const PageOne(),
     const PageTwo(),
     const PageThree(),
+    const PageFour(),
   ];
 
   @override
@@ -29,16 +29,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Información personal',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
             label: 'Información académica',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.abc_sharp),
+            label: 'Reinscripción',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.source_sharp),
+            label: 'Servicio social/Residencias',
           ),
         ],
       ),

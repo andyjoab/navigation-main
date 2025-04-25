@@ -14,6 +14,7 @@ class _PersistentDrawerState extends State<PersistentDrawer> {
     const PageOne(),
     const PageTwo(),
     const PageThree(),
+    const PageFour(),
   ];
 
   @override
@@ -39,26 +40,54 @@ class _PersistentDrawerState extends State<PersistentDrawer> {
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Home'),
+              leading: const Icon(Icons.person),
+              title: const Text(
+                'Información personal',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 124, 212, 124),
+                ),
+              ),
               onTap: () {
                 _selectPage(0);
                 Navigator.pop(context);
               },
             ),
             ListTile(
-              leading: const Icon(Icons.person),
-              title: const Text('Información personal'),
+              leading: const Icon(Icons.school),
+              title: const Text(
+                'Información académica',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 18, 103, 230),
+                ),
+              ),
               onTap: () {
                 _selectPage(1);
                 Navigator.pop(context);
               },
             ),
             ListTile(
-              leading: const Icon(Icons.school),
-              title: const Text('Información académica'),
+              leading: const Icon(Icons.abc_sharp),
+              title: const Text(
+                'Reinscripción',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 133, 130, 126),
+                ),
+              ),
               onTap: () {
                 _selectPage(2);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.source_sharp),
+              title: const Text(
+                'Servicio social/Residencias',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 255, 12, 162),
+                ),
+              ),
+              onTap: () {
+                _selectPage(3);
                 Navigator.pop(context);
               },
             ),

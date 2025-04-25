@@ -20,6 +20,7 @@ class _IndexedStackNavigationState extends State<IndexedStackNavigation> {
           PageOne(),
           PageTwo(),
           PageThree(),
+          PageFour(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -27,16 +28,20 @@ class _IndexedStackNavigationState extends State<IndexedStackNavigation> {
         onTap: _onItemTapped,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Información personal',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
             label: 'Información académica',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.abc_sharp),
+            label: 'Reinscripción',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.source_sharp),
+            label: 'Servicio social/Residencias',
           ),
         ],
       ),

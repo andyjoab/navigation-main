@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         '/one': (context) => const PageOne(),
         '/two': (context) => const PageTwo(),
         '/three': (context) => const PageThree(),
+        '/four': (context) => const PageFour(),
       },
     );
   }
 }
-
